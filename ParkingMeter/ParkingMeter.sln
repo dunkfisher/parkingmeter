@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingMeter", "ParkingMeter.csproj", "{617D11A6-3743-40F5-8F69-2032A2095D2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkingMeter.Tests", "..\ParkingMeter.Tests\ParkingMeter.Tests.csproj", "{17357D7B-E04A-4201-876D-1DD8BAE941A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{617D11A6-3743-40F5-8F69-2032A2095D2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{617D11A6-3743-40F5-8F69-2032A2095D2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{617D11A6-3743-40F5-8F69-2032A2095D2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{617D11A6-3743-40F5-8F69-2032A2095D2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17357D7B-E04A-4201-876D-1DD8BAE941A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17357D7B-E04A-4201-876D-1DD8BAE941A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17357D7B-E04A-4201-876D-1DD8BAE941A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17357D7B-E04A-4201-876D-1DD8BAE941A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4BC10B2-D9D5-4CCC-A8FA-EE3407AEF645}
+	EndGlobalSection
+EndGlobal

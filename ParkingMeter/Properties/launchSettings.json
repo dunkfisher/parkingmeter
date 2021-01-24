@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ParkingMeter": {
+      "commandName": "Project",
+      "commandLineArgs": "ShortStay \"07/09/2017 16:50:00\" \"09/09/2017 19:15:00\""
+    }
+  }
+}

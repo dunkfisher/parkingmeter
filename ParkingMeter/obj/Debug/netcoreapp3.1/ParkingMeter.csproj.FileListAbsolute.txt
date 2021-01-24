@@ -1,0 +1,13 @@
+C:\Users\Duncan\Source\parkingmeter\ParkingMeter\bin\Debug\netcoreapp3.1\ParkingMeter.exe
+C:\Users\Duncan\Source\parkingmeter\ParkingMeter\bin\Debug\netcoreapp3.1\ParkingMeter.deps.json
+C:\Users\Duncan\Source\parkingmeter\ParkingMeter\bin\Debug\netcoreapp3.1\ParkingMeter.runtimeconfig.json
+C:\Users\Duncan\Source\parkingmeter\ParkingMeter\bin\Debug\netcoreapp3.1\ParkingMeter.runtimeconfig.dev.json
+C:\Users\Duncan\Source\parkingmeter\ParkingMeter\bin\Debug\netcoreapp3.1\ParkingMeter.dll
+C:\Users\Duncan\Source\parkingmeter\ParkingMeter\bin\Debug\netcoreapp3.1\ParkingMeter.pdb
+C:\Users\Duncan\Source\parkingmeter\ParkingMeter\obj\Debug\netcoreapp3.1\ParkingMeter.csprojAssemblyReference.cache
+C:\Users\Duncan\Source\parkingmeter\ParkingMeter\obj\Debug\netcoreapp3.1\ParkingMeter.AssemblyInfoInputs.cache
+C:\Users\Duncan\Source\parkingmeter\ParkingMeter\obj\Debug\netcoreapp3.1\ParkingMeter.AssemblyInfo.cs
+C:\Users\Duncan\Source\parkingmeter\ParkingMeter\obj\Debug\netcoreapp3.1\ParkingMeter.csproj.CoreCompileInputs.cache
+C:\Users\Duncan\Source\parkingmeter\ParkingMeter\obj\Debug\netcoreapp3.1\ParkingMeter.dll
+C:\Users\Duncan\Source\parkingmeter\ParkingMeter\obj\Debug\netcoreapp3.1\ParkingMeter.pdb
+C:\Users\Duncan\Source\parkingmeter\ParkingMeter\obj\Debug\netcoreapp3.1\ParkingMeter.genruntimeconfig.cache
