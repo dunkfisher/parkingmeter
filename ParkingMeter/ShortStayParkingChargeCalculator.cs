@@ -44,7 +44,6 @@ namespace ParkingMeter
                 // Deduct fractional charge (if any)
                 if (timeTracker > periodStart && timeTracker < periodEnd)
                 {
-                    //difference = timeTracker - new DateTime(Math.Min(ChargeEndHour(timeTracker).Ticks, periodEnd.Ticks));
                     difference = timeTracker - ChargeEndHour(timeTracker);
                     totalCharge -= ((decimal)difference.Minutes / 60) * _hourRate;
                 }
