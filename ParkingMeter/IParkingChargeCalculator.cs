@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ParkingMeter
 {
-    public interface IParkingChargeCaculator
+    public interface IParkingChargeCalculator
     {
         decimal CalculateTotalCharge(DateTime periodStart, DateTime periodEnd);
     }

@@ -2,7 +2,7 @@
 
 namespace ParkingMeter
 {
-    public class LongStayParkingChargeCalculator : IParkingChargeCaculator
+    public class LongStayParkingChargeCalculator : IParkingChargeCalculator
     {
         private readonly decimal _dayRate;
 

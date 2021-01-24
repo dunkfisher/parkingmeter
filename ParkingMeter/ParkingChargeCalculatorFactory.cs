@@ -5,7 +5,7 @@
         const decimal HOUR_RATE = 1.1m;
         const decimal DAY_RATE = 7.5m;
 
-        public IParkingChargeCaculator GetCalculator(ParkingChargeType chargeType)
+        public IParkingChargeCalculator GetCalculator(ParkingChargeType chargeType)
         {
             switch (chargeType)
             {

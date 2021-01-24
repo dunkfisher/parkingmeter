@@ -35,7 +35,7 @@ namespace ParkingMeter.Tests
 
             var result = calculator.CalculateTotalCharge(new DateTime(2021, 1, 25, 16, 50, 0), new DateTime(2021, 1, 27, 19, 15, 0));
 
-            Assert.AreEqual(22.38, result);
+            Assert.AreEqual(23.28m, Math.Round(result, 2));
         }
 
         [TestMethod]
@@ -43,9 +43,9 @@ namespace ParkingMeter.Tests
         {
             var calculator = new ShortStayParkingChargeCalculator(HOUR_RATE);
 
-            var result = calculator.CalculateTotalCharge(new DateTime(2021, 1, 24, 16, 50, 0), new DateTime(2021, 1, 26, 19, 15, 0));
+            var result = calculator.CalculateTotalCharge(new DateTime(2021, 1, 28, 16, 50, 0), new DateTime(2021, 1, 30, 19, 15, 0));
 
-            Assert.AreEqual(12.28, result);
+            Assert.AreEqual(12.28m, Math.Round(result, 2));
         }
     }
 }

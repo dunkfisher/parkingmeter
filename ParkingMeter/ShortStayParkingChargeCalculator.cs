@@ -2,7 +2,7 @@
 
 namespace ParkingMeter
 {
-    public class ShortStayParkingChargeCalculator : IParkingChargeCaculator
+    public class ShortStayParkingChargeCalculator : IParkingChargeCalculator
     {
         private readonly int _chargeStartHour;
         private readonly int _chargeEndHour;
@@ -23,29 +23,33 @@ namespace ParkingMeter
 
             do
             {
-                while (!IsWithinChargeablePeriod(timeTracker, periodEnd))
+                while (timeTracker < periodEnd && !IsWithinChargeablePeriod(timeTracker, periodEnd))
                 {
                     timeTracker = timeTracker.AddHours(1);
                 }
 
                 // Add fractional charge (if any)
-                if (timeTracker > periodStart && timeTracker <= periodEnd)
+                if (timeTracker > periodStart && timeTracker < periodEnd)
                 {
                     difference = timeTracker - ChargeStartHour(timeTracker);
                     totalCharge += ((decimal)difference.Minutes / 60) * _hourRate;
                 }
 
-                while (IsWithinChargeablePeriod(timeTracker, periodEnd))
+                while (timeTracker < periodEnd && IsWithinChargeablePeriod(timeTracker, periodEnd))
                 {
                     totalCharge += _hourRate;
                     timeTracker = timeTracker.AddHours(1);
                 }
 
-                // Deduct fractional charge (if any)                
-                difference = timeTracker - new DateTime(Math.Min(ChargeEndHour(timeTracker).Ticks, periodEnd.Ticks));
-                totalCharge -= ((decimal)difference.Minutes / 60) * _hourRate;                
+                // Deduct fractional charge (if any)
+                if (timeTracker > periodStart && timeTracker < periodEnd)
+                {
+                    //difference = timeTracker - new DateTime(Math.Min(ChargeEndHour(timeTracker).Ticks, periodEnd.Ticks));
+                    difference = timeTracker - ChargeEndHour(timeTracker);
+                    totalCharge -= ((decimal)difference.Minutes / 60) * _hourRate;
+                }
             }
-            while (timeTracker <= periodEnd);
+            while (timeTracker < periodEnd);
 
             return totalCharge;
         }
