@@ -35,17 +35,16 @@ namespace ParkingMeter.Tests
 
             var result = calculator.CalculateTotalCharge(new DateTime(2021, 1, 25, 16, 50, 0), new DateTime(2021, 1, 27, 19, 15, 0));
 
-            //Assert.AreEqual(HOURLY_RATE * , result);
             Assert.AreEqual(22.38, result);
         }
 
+        [TestMethod]
         public void CalculateTotalCharge_OverMixOfWeekdaysAndWeekends_ChargedAccordingly()
         {
             var calculator = new ShortStayParkingChargeCalculator(HOUR_RATE);
 
             var result = calculator.CalculateTotalCharge(new DateTime(2021, 1, 24, 16, 50, 0), new DateTime(2021, 1, 26, 19, 15, 0));
 
-            //Assert.AreEqual(HOURLY_RATE * , result);
             Assert.AreEqual(12.28, result);
         }
     }

@@ -27,5 +27,15 @@ namespace ParkingMeter.Tests
 
             Assert.AreEqual(DAY_RATE * 3, result);
         }
+
+        [TestMethod]
+        public void CalculateTotalCharge_ForSeveralDaysAcrossTwoMonths_ChargedAccordingly()
+        {
+            var calculator = new LongStayParkingChargeCalculator(DAY_RATE);
+
+            var result = calculator.CalculateTotalCharge(new DateTime(2021, 1, 30, 7, 50, 0), new DateTime(2021, 2, 1, 5, 20, 0));
+
+            Assert.AreEqual(DAY_RATE * 3, result);
+        }
     }
 }
